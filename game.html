@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>STOPAPSCI</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Rampart+One" rel="stylesheet">
+
+
+    <!-- Font Awesome Icons -->
+    <script src="https://kit.fontawesome.com/582ef46b2a.js" crossorigin="anonymous"></script>
+
+    <!-- Bootstrap Style Link -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- Custom Style Link -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Bootstrap JS Embedding -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <h1 id="timer-text"></h1>
+    <section id="game-header">
+        <h2 class="heading game-heading">STOPAPSCI</h2>
+        <button id="snap" type="button" class="btn btn-warning endgame-button">End Game</button>
+    </section>
+    <section id="game-section">
+        <div class="row">
+            <div class="col-lg-6 entry-right">
+                <h2 class="player-text">You</h2>
+                <video id="camera"></video>
+            </div>
+            <div class="col-lg-6 entry-left">
+                <h2 class="player-text">Simpson</h2>
+                <div id="simpson-choice"><i class="fas fa-hand-rock fa-10x choice-icon"></i></div>
+                <div id="score-container">
+                    <h1 id="score-title">SCORE</h1>
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <h2 class="player-text">You</h2>
+                            <p id="user-score-text" class="score-text">0</p>
+                        </div>
+                        <div class="col-lg-6">
+                            <h2 class="player-text">Simpson</h2>
+                            <p id="simpson-score-text" class="score-text">0</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="footer">
+        <p id="footer-text">© 2021 Developed by Dharineeh Ram</p>
+    </section>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="src/game.js"></script>
+</body>
+
+</html>
