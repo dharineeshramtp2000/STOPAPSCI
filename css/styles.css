@@ -1,0 +1,152 @@
+body{
+    background-color: #DF2E2E;
+}
+#cartoon-image{
+    height: 600px;
+    width: auto;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    z-index: -1;
+}
+/* Heading Section */
+#heading-section{
+    margin: 2% 0;
+    text-align: center;
+}
+@keyframes slide-down {
+    from {transform: translate(0,-700%)}
+    to {transfrom: translate(0,0)}
+}
+@keyframes slide-right {
+    from {transform: translate(-700px,0)}
+    to {transfrom: translate(0,0)}
+}
+@keyframes slide-left {
+    from {transform: translate(100%,0)}
+    to {transfrom: translate(0,0)}
+}
+.heading{
+    font-family: 'Rampart One', cursive;
+    color: #FFF7AE;
+    font-size: 6vw;
+    animation-name: slide-down ;
+    animation-duration: 1.2s;
+}
+
+/* Start Section */
+#start-section{
+    margin: 5% 0 0;
+    text-align: center;
+}
+
+.game-icon{
+    color: #F6D167;
+    margin: 0 20px;
+    animation-name: slide-down ;
+    animation-duration: 1.4s;
+}
+#start-button{
+    margin-top: 100px;
+
+}
+.custom-btn {
+    box-shadow: 2px 2px 2px #313538;
+    border-radius: 100%;
+	background-color: #297F87;
+	border-color: #297F87;
+    animation-name: slide-right;
+    animation-duration: 1.2s;
+}
+.play-icon{
+    margin: 10px 10px 10px 23px;
+}
+
+/* Footer Section */
+#footer{
+    position:absolute;
+    bottom:0;
+    width:100%;
+    text-align: center;
+}
+#footer-text{
+    color: #fff;
+}
+
+/* Game Page */
+#game-header{
+    padding: 2% 3%;
+}
+
+.game-heading{
+    font-size: 4vw;
+    display: inline-block;
+}
+.endgame-button{
+    position: absolute;
+    right: 3%;
+    top: 8%;
+}
+
+/* Game Section */
+#timer-text{
+    position: absolute;
+    font-family: 'Montserrat';
+    top: 45%;
+    left: 49%;
+    color: #fff;
+    font-size: 9vw;
+    z-index: 1;
+}
+#game-section{
+    padding: 0 3%;
+}
+.entry-right{
+    animation-name: slide-right;
+    animation-duration: 1.2s;
+}
+
+.entry-left{
+    animation-name: slide-left;
+    animation-duration: 1.2s;
+}
+
+.player-text{
+    color: #F6D167;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    text-align: center;
+}
+#camera{
+    height: 500px;
+    width: 100%;
+    border-radius: 8px;
+    overflow: hidden; 
+}
+#simpson-choice{
+    text-align: center;
+}
+.choice-icon{
+    color: #F6D167;
+    margin: 5% 0;
+}
+#score-container{
+    background-color: #297F87;
+    border-radius: 8px;
+}
+#score-title{
+    text-align: center;
+    font-family: 'Rampart One', cursive;
+    color: #fff;
+    margin-bottom: 3%;
+}
+.score-text{
+    text-align: center;
+    color: #fff;
+    font-size: 4.5vw;
+    font-family: 'Montserrat', sans-serif;
+}
+
+::-webkit-scrollbar {
+    display: none;
+  }
